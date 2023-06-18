@@ -1,10 +1,10 @@
 {
-  "name": "capsule",
+  "name": "kapsel",
   "version": "0.0.0",
   "description": "Data with additives in one capsule",
   "main": "index.js",
   "scripts": {
-    "build": "tsc --build",
+    "build": "tsc --project build.tsconfig.json",
     "lint": "eslint . --ext .ts --fix",
     "prettier": "prettier --write .",
     "test": "jest",
@@ -12,14 +12,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ulitcos/capsula.git"
+    "url": "git+https://github.com/ulitcos/kapsel.git"
   },
   "author": "Ruslan Krokhin <ulitcos@gmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/ulitcos/capsula/issues"
+    "url": "https://github.com/ulitcos/kapsel/issues"
   },
-  "homepage": "https://github.com/ulitcos/capsula#readme",
+  "homepage": "https://github.com/ulitcos/kapsel#readme",
   "devDependencies": {
     "@babel/core": "^7.22.5",
     "@babel/preset-env": "^7.22.5",
