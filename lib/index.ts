@@ -24,13 +24,13 @@ export class Kapsel<D = unknown> {
     this.defer = defer;
   }
 
-  get data(): D {
+  public get data(): D {
     this.defer && this.fill(this.defer());
 
     return this.payload;
   }
 
-  set data(payload: D) {
+  public set data(payload: D) {
     this.err = null;
     this.defer = null;
     this.prev = this.payload;
@@ -38,7 +38,7 @@ export class Kapsel<D = unknown> {
     this.notify();
   }
 
-  get isLoading(): boolean {
+  public get isLoading(): boolean {
     return this.isProcess;
   }
 
@@ -47,7 +47,7 @@ export class Kapsel<D = unknown> {
     this.notify();
   }
 
-  get error(): Error | null {
+  public get error(): Error | null {
     return this.err;
   }
 
@@ -56,7 +56,7 @@ export class Kapsel<D = unknown> {
     this.notify();
   }
 
-  get hasError(): boolean {
+  public get hasError(): boolean {
     return Boolean(this.err);
   }
 
